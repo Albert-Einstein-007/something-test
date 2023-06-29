@@ -91,20 +91,20 @@ a:link, a:visited, a:active{
     .shape1{
         top: 0px;
         left: -40px;
-        width: 400px;
+        width: 300px;
         height: 400px;
 
     }
     .shape2{
         right: -50px;
         bottom: -10px;
-        width: 400px;
+        width: 300px;
         height: 300px;
     }
     .box{
         font-size: 20px;
         height: 60%;
-        width: 50%;
+        width: 70%;
         text-align: center;
     }
     .box form{
