@@ -51,6 +51,7 @@
     border-radius: 20px;
     backdrop-filter: blur(10px);
     background-size: cover;
+    
 }
 .box form{
     display: flex;
@@ -60,12 +61,12 @@
 }
 .box form input{
     margin: 20px;
-    font-size: 30px;
+    font-size: 20px;
     height: 50px;
     outline: none;
     border: none;
     background-color: transparent;
-    border-bottom:5px solid #AE80FF;
+    border-bottom:3px solid #AE80FF;
     cursor: pointer;
 }
 .box form .btn-signup{
@@ -73,6 +74,14 @@
     text-align: center;
     color: white;
     border-radius: 10px;
+}
+.box h1{
+    font-size: 25px;
+    margin: 5px;
+}
+.box h3{
+     font-size:15px;
+     margin: 5px;   
 }
 .box form .btn-signup:hover{
     box-shadow: 0 0 3px #AE80FF,0 0 10px #AE80FF;
