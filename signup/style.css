@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      overflow: -moz-hidden-unscrollable;
+}
+
+
+.shape1{
+    position:fixed;
+    top: 0px;
+    left: -20%;
+    padding: 20px;
+    width: 70vw;
+    height: 70vh;
+    flex-shrink: 0;
+    background-image: url("../images/shape1.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+.shape2{
+    position: fixed;
+    right: -25%;
+    bottom: 0px;
+    width: 70vw;
+    height: 70vh;
+    background-image: url("../images/shape2.png");
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    background-position:center;
+    background-size:contain;
+    overflow: hidden;
+    
+}
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.164);
+    box-sizing: border-box;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+}
+.box form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+}
+.box form input{
+    margin: 20px;
+    font-size: 30px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom:5px solid #AE80FF;
+    cursor: pointer;
+}
+.box form .btn-signup{
+    background-color: #AE80FF;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.box form .btn-signup:hover{
+    box-shadow: 0 0 3px #AE80FF,0 0 10px #AE80FF;
+}
+input::placeholder{
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: rgb(124, 95, 230);
+}
+@media(max-width: 700px ){
+    .shape1{
+        top: 0px;
+        left: -40px;
+        width: 400px;
+        height: 400px;
+
+    }
+    .shape2{
+        right: -50px;
+        bottom: -10px;
+        width: 400px;
+        height: 300px;
+    }
+    .box{
+        font-size: 20px;
+        height: 60%;
+        width: 50%;
+        text-align: center;
+    }
+    .box form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    .box h1{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .box h3{
+         font-size:15px;
+         margin: 5px;   
+    }
+    .box form input{
+        margin: 15px;
+        font-size: 20px;
+        height: 30px;
+    }
+}
