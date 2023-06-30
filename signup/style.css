@@ -8,7 +8,7 @@
 
 
 .shape1{
-    position:absolute;
+    position:fixed;
     top: 0px;
     left: -20%;
     padding: 20px;
@@ -22,7 +22,7 @@
     animation:shape1A 150s linear infinite;
 }
 .shape2{
-    position: absolute;
+    position: fixed;
     right: -25%;
     bottom: 0px;
     width: 70vw;
@@ -114,12 +114,15 @@ a:link, a:visited, a:active{
     }
 }
 @media(max-width: 700px ){
+    body{
+        overflow: hidden;
+    }
     .shape1{
         top: 0px;
         left: -40px;
         width: 300px;
         height: 400px;
-
+        position: absolute;
     }
     .shape2{
         right: -50px;
@@ -132,6 +135,7 @@ a:link, a:visited, a:active{
         height: 60%;
         width: 70%;
         text-align: center;
+        position: fixed;
     }
     .box form{
         width: 90%;
